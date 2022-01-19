@@ -1,0 +1,117 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* contenitore generale*/
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Contenitore delle varie immagini della card/prodotto */
+
+.card {
+    padding: 10px;
+    width: calc((100% / 3) - 4px);
+    display: inline-block;
+}
+
+.card-img {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-img:hover .first-img {
+    display: none;
+}
+
+.card-img .second-img {
+    display: none;
+}
+
+.card-img:hover .second-img {
+    display: inline-block;
+}
+
+/* posizioni del cuore e dello sconto */
+
+.absolute {
+    position: absolute;
+}
+
+.card-heart {
+    right: 0;
+    top: 20px;
+    font-size: 2rem;
+    padding: 8px 16px;
+    background-color: white;
+    display: none;
+}
+
+.card-img:hover .card-heart{
+    display:inline-block;
+}
+
+.card-heart:active{
+    color: red;
+}
+
+.card-promo {
+    left: 0;
+    bottom: 25px;
+}
+
+.card-promo span {
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+.card-discount {
+    background-color: #eb0037;
+}
+
+.card-tag {
+    background-color: #00875a;
+}
+
+/* Contenitore delle varie
+ informazioni descrittive della card/prodotto */
+
+.card-text {
+    text-align: left;
+}
+
+.card-product-name {
+    text-transform: uppercase;
+}
+
+.card-text span,
+.card-text del {
+    font-size: .90rem;
+}
+
+.card-price {
+    color: red;
+    font-weight: bold;
+}
+
+.card-text:hover{
+    background-color: orchid;
+    color:lightgray
+}
